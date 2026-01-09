@@ -1,0 +1,139 @@
+.container {
+    flex: 1;
+    z-index: 1;
+    padding: 1.5rem;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedules {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+.schedule.glass {
+    border: none;
+    /* outline: 2px solid white; */
+    background-color: rgba(240, 240, 240, 0.5);
+    box-shadow: inset 0 0 1rem white,
+                inset 0 0 0 2px white;
+    transform: translateX(5rem);
+    opacity: 0;
+    animation: to-left 0.4s ease-out forwards;
+}
+
+@keyframes to-left {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.schedules::-webkit-scrollbar {
+    height: 8px;
+}
+
+.schedules::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.schedule {
+    flex: 0 0 auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.schedule svg {
+    height: 1rem;
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    /* height: 2rem; */
+    padding: 0 1.5rem;
+    height: 3rem;
+    /* border-radius: 1rem 1rem 0 0; */
+    align-items: center;
+    background-color: gray;
+    position: relative;
+}
+
+.title svg {
+    stroke-width: 2;
+    color: black;
+    height: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.title .delete-btn {
+    color: black;
+}
+
+.title .delete-btn svg {
+    position: absolute;
+    height: 1.25rem;
+    aspect-ratio: 1/1;
+    color: black;
+    right: 1.25rem;
+    top: 0.875rem;
+    z-index: 5;
+}
+
+.title.finished {
+    background-color: greenyellow;
+}
+
+.title.cancelled {
+    background-color: red;
+}
+
+.schedule p {
+    text-align: justify;
+    margin: 0.5rem 1.5rem 0;
+    font-size: 0.875rem;
+}
+
+.schedule p svg {
+    height: 0.875rem;
+    stroke-width: 2.5;
+}
+
+.schedule a {
+    color: #1267B8;
+    text-decoration: none;
+}
+
+.schedule .button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+}
+
+.in-between {
+    display: flex;
+    flex-direction: column;
+}
+
+.in-rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

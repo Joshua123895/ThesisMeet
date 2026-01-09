@@ -1,0 +1,163 @@
+.container {
+    padding: 1.5rem;
+    margin: 0 auto 5rem;
+    height: calc(85vh - 5rem);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+h1 {
+    color: #1267B8;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 2.5rem;
+}
+
+.label svg {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    aspect-ratio: 1/1;
+    stroke-width: 2;
+}
+
+input {
+    width: calc(100% - 2rem);
+    height: 2.5rem;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.582);
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+.two {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.search {
+    flex: 1;
+    min-height: 0;
+}
+
+.search-result {
+    position: relative;
+}
+
+.results {
+    margin-left: 2rem;
+    position: absolute;
+    overflow: hidden;
+    max-width: calc(100% - 2rem);
+    overflow-x: auto;
+    display: flex;
+    gap: 0.5rem;
+    /* outline: 2px solid rgba(255, 255, 255, 0.582); */
+}
+
+.result-item {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1000px;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+.selected {
+    margin-top: 1.75rem;
+    margin-left: 2rem;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.tag {
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.selected .tag .close-button {
+    appearance: none;
+    cursor: pointer;
+}
+
+.selected .tag .close-button svg {
+    height: 1rem;
+    stroke-width: 2;
+    aspect-ratio: 1/1;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons .button {
+    width: 15rem;
+}
+
+.button {
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.button svg {
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.button.white {
+    border: 2px solid white;
+    color: black;
+    box-shadow: inset 0 0 1rem white;
+}
+
+.button.white:hover {
+    background-color: white;
+    box-shadow: inset 0 0 1rem white,
+                0 0 0.5rem white;
+}
+
+.button.blue {
+    border: 2px solid #1267B8;
+    background-color: #1267B8;
+    color: white;
+}
+
+.button.blue:hover {
+    box-shadow: 0 0 1rem #1267B8;
+    background-color: white;
+    color: #1267B8;
+}

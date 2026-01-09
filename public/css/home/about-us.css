@@ -1,0 +1,45 @@
+.blue-button {
+    color: #1267B8;
+    background-color: transparent;
+    border: 2px solid #1267B8;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 1000px;
+    padding: 0.5rem 4rem;
+    transition: all 0.3s ease;
+    height: 2.5rem;
+    align-self: normal;
+    margin-right: auto;
+}
+
+.blue-button svg {
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.blue-button:hover {
+    color: white;
+    background-color: #1267B8;
+    box-shadow: 0 0 1rem #1267B8;
+}
+
+.container {
+    margin: 0 auto 5rem;
+    width: 80vw;
+    height: calc(85vh - 5rem);
+    padding: 2rem 3rem;
+}
+
+.container h1 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #1267B8;
+}
+
+.container p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}

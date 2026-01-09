@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    height: 85vh;
+    padding: 0 5rem 0.25rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.container .glass {
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.pdf-wrapper {
+    height: 100%;
+    flex: 1;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.notes {
+    width: 400px;
+}
+
+.notes.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.notes.separate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notes h1 {
+    font-size: 1.5rem;
+    color: #1267B8;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.notes h1:nth-child(1) {
+    margin-top: 0;
+}
+
+.notes p {
+    margin-left: 1.5rem;
+    text-align: justify;
+}
+
+.notes ol {
+    margin-left: 2.5rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    text-wrap: wrap;
+    /* list-style-position: inside; */
+}
+
+.notes ol li {
+    display: list-item;
+}
+
+.notes ol li span {
+    flex: 1;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.delete-note {
+    all: unset;
+    cursor: pointer;
+    color: red;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.buttons .button {
+    border-radius: 0.5rem;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.button.small {
+    padding: 0.25rem 0.75rem;
+}
+
+.button svg {
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.button.blue {
+    border: 2px solid #1267B8;
+    background-color: #1267B8;
+    color: white;
+}
+
+.button.blue:hover {
+    box-shadow: 0 0 1rem #1267B8;
+    background-color: white;
+    color: #1267B8;
+}
+
+.button.white {
+    border: 2px solid white;
+    color: black;
+    box-shadow: inset 0 0 1rem white;
+}
+
+.button.white:hover {
+    background-color: white;
+    box-shadow: inset 0 0 1rem white,
+                0 0 0.5rem white;
+}
+
+input {
+    width: 100%;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}

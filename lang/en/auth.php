@@ -1,0 +1,58 @@
+<?php
+return [
+    "welcome back" => "welcome back",
+    "login" => "login",
+    "i am a" => "i am a",
+    "student" => "student",
+    "lecturer" => "lecturer",
+    "email" => "email",
+    "password" => "password",
+    "forgot password" => "forgot password",
+    "don't have account" => "don't have account",
+
+    "register" => "register",
+    "student registration" => "student registration",
+    "lecturer registration" => "lecturer registration",
+    "name" => "name",
+    "student ID" => "student ID",
+    "major" => "major",
+    "already have an account" => "already have an account",
+    "phone number" => "phone number",
+    "profile picture" => "profile picture",
+    "choose image" => "choose image",
+    "profile description" => "profile description",
+    "write something about yourself" => "write something about yourself",
+    "create account for" => "create account for",
+    "click here" => "click here",
+
+    "reset password" => "reset password",
+    "desc forgot" => "Enter your email address and we'll send you a link to reset your password.",
+    "send reset link" => "send reset link",
+    "remember your password" => "remember your password",
+    
+    "new password" => "new password",
+    "enter new password" => "enter new password (min. 8 characters)",
+    "confirm password" => "confirm password",
+    "confirm new password" => "confirm new password",
+    
+    "verification sent" => "verification sent",
+    "verify your email" => "verify your email",
+    "please click" => "please click the link sent to your email.",
+    "if you don't" => "If you don't receive the email verification, please click the button down below.",
+    "resend verification email" => "resend verification email",
+
+    "invalid credentials" => "Invalid credentials",
+    "success log in student" => "Successfully created a student account and log in.",
+    "success log in lecturer" => "Successfully created a lecturer account and log in.",
+    "success log in" => "Successfully created an account. Please try to log in.",
+    
+    "verification email sent" => "Verification email sent!",
+    "email not found" => "We could not find a user with that email address.",
+    "password reset link sent" => "We have sent your password reset link to your email!",
+    "invalid token" => "Invalid or expired reset token.",
+    "expired token" => "Reset token has expired.",
+    "password has been reset" => "Your password has been reset successfully!",
+
+    "error occured" => "An error has been occured",
+    "errors occured" => "errors has been occured",
+];

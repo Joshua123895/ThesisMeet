@@ -1,0 +1,288 @@
+.container {
+    height: 85vh;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem;
+    padding-top: 0rem;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    align-self: center;
+}
+
+.left-cont,
+.right-cont {
+    padding: 2rem;
+    height: 100%;
+}
+
+.left-cont {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.left-cont .profile {
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    height: 40%;
+    border: 2px solid white;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-cont .profile.edit {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left-cont .profile.edit::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    border-radius: 1000px;
+    transition: all 0.3s ease;
+}
+
+.left-cont .profile.edit svg {
+    position: absolute;
+    z-index: 1;
+    height: 25%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    color: transparent;
+    transform: translate(-50%, -50%);
+}
+
+.left-cont .profile.edit:hover::before {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.left-cont .profile.edit:hover > svg {
+    color: white;
+}
+
+.left-cont .profile img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.left-cont .profile svg {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.left-cont .text {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.left-cont .text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #1267B8;
+    margin: 0.75rem 0;
+}
+
+.left-cont .text h3 {
+    /* font-size: 2rem; */
+    font-weight: 500;
+    color: gray;
+}
+
+.left-cont .buttons {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-cont .buttons .button {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem 4rem;
+    transition: all 0.3s ease;
+}
+
+.button svg {
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.button.red {
+    border: 2px solid red;
+    color: red;
+}
+
+.button.red:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 0.5rem red;
+}
+
+.button.blue {
+    color: white;
+    background-color: #1267B8;
+    border: 2px solid #1267B8;
+}
+
+.button.blue:hover {
+    color: #1267B8;
+    background-color: white;
+    box-shadow: 0 0 0.5rem #1267B8;
+}
+
+/* .button.blue-second {
+    color: #1267B8;
+    background-color: transparent;
+    border: 2px solid #1267B8;
+}
+
+.button.blue-second:hover {
+    color: white;
+    background-color: #1267B8;
+    box-shadow: 0 0 0.5rem #1267B8;
+} */
+
+.right-cont {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-cont h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.right-cont h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.right-cont h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.right-cont p {
+    text-align: justify;
+}
+
+.right-cont section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.right-cont .in-rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-cont .item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* justify-content: baseline; */
+    gap: 1rem;
+    height: 2.5rem;
+    /* height: 100%; */
+}
+
+.right-cont .item svg {
+    height: 2rem;
+    width: 2rem;
+    stroke-width: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-cont .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.small-input {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.large-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.labels,
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.labels {
+    margin-right: 1rem;
+}
+
+.inputs {
+    flex: 1;
+    align-items: stretch;
+}
+
+.inputs input {
+    width: 100%;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    height: 2.5rem;
+}
+
+.large-input textarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 0.5rem 0.75rem;
+    /* flex: 1; */
+
+    border-radius: 1.25rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+
+    resize: vertical;
+}

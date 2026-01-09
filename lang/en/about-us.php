@@ -1,0 +1,7 @@
+<?php
+return [
+    "p1" => "ThesisMeet is an educational technology application designed to help college students and lecturers manage thesis consultations more easily and efficiently. This application is available on both mobile and web platforms, allowing users to access the system flexibly anytime and anywhere.",
+    "p2" => "Many students face difficulties when scheduling thesis consultations because they often need to wait in line or depend on slow communication with their lecturers. As a result, the consultation process can become unorganized and time consuming. ThesisMeet was created to solve this problem by providing a structured online consultation system that simplifies scheduling and communication.",
+    "p3" => "Through this platform, students can book available consultation schedules, upload thesis documents such as proposals or revisions, and track their consultation progress in one place. At the same time, lecturers can manage consultation schedules, review student documents, and provide revision notes directly through the system, making the process more efficient.",
+    "p4" => "Overall, ThesisMeet aims to make the thesis consultation process more organized, faster, and easier to monitor for both students and lecturers. By using this application, communication becomes clearer, document management becomes simpler, and consultation progress can be tracked effectively from start to finish.",
+];

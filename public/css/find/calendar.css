@@ -1,0 +1,286 @@
+.container {
+    width: 80vw;
+    height: calc(85vh - 5rem);
+    padding: 1.5rem;
+    margin: 0 auto 5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper {
+    width: 100%;
+}
+
+.upper h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.upper select {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    border-radius: 1000px;
+    line-height: 1.1;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.button svg {
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.button.white {
+    border: 2px solid white;
+    color: black;
+    box-shadow: inset 0 0 1rem white;
+}
+
+.button.white:hover {
+    background-color: white;
+    box-shadow: inset 0 0 1rem white,
+                0 0 0.5rem white;
+}
+
+.button.blue {
+    color: white;
+    background-color: #1267B8;
+    border: 2px solid #1267B8;
+}
+
+.button.blue:hover {
+    color: #1267B8;
+    background-color: white;
+    box-shadow: 0 0 0.5rem #1267B8;
+}
+
+.button.red {
+    border: 2px solid red;
+    color: red;
+}
+
+.button.red:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 0.5rem red;
+}
+
+.right {
+    flex: 3;
+    min-height: 0;
+    padding: 1.5rem;
+}
+
+.fc-header-toolbar {
+    position: sticky;
+    top: 0;
+    background: transparent;
+    z-index: 20;
+}
+
+.calendar-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: transparent;
+    display: flex;
+    width: 100%;
+}
+
+.calendar-toolbar h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.calendar-toolbar .fc-header-toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+    margin-bottom: 0.75rem;
+
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+    
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.calendar-toolbar .fc-toolbar-chunk {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.calendar-toolbar .fc-toolbar-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.calendar-toolbar .fc-button-group {
+    display: inline-flex;
+    gap: 0.25rem;
+}
+
+.calendar-toolbar .fc-button-primary {
+    background-color: #1267B8;
+    border: 2px solid #1267B8;
+    color: white;
+
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.65rem;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.calendar-toolbar .fc-button-primary:hover:not(:disabled) {
+    background-color: white;
+    color: #1267B8;
+    box-shadow: 0 0 0.4rem rgba(18, 103, 184, 0.6);
+}
+
+.calendar-toolbar .fc-button-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.calendar-toolbar .fc-button:focus {
+    box-shadow: none;
+}
+
+.calendar-scroll {
+    padding-right: 0.75rem;
+    flex: 1;
+    max-height: 100%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.calendar-scroll::-webkit-scrollbar{
+    appearance: none;
+    width: 0.5rem;
+}
+
+.calendar-scroll::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+}
+
+.calendar-scroll .fc {
+    --fc-header-height: 56px;
+}
+
+.calendar-scroll .fc .fc-col-header {
+    position: sticky;
+    top: 10rem;
+    z-index: 9;
+    background: transparent;
+}
+
+.fc .fc-scrollgrid-section-sticky > * {
+    background-color: transparent;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
+
+.fc th {
+    font-weight: 400;
+}
+
+.fc .fc-timegrid-slot {
+    height: 2rem;
+}
+
+.fc .fc-scroller::-webkit-scrollbar {
+    appearance: none;
+    width: 8px;
+}
+
+.fc .fc-scroller::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.fc .fc-scroller::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 100px;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr auto;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: end;
+}
+
+.schedule-row label {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    display: block;
+}
+
+.schedule-row select,
+.schedule-row input[type="time"] {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: transparent;
+}
+
+.schedule-row .remove {
+    border: none;
+    background: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #e74c3c;
+    padding: 4px;
+}
+
+.schedule-row .remove:hover {
+    opacity: 0.7;
+}

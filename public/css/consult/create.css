@@ -1,0 +1,237 @@
+form {
+    display: flex;
+    flex-direction: column;
+    height: calc(85vh - 5rem);
+    width: 70vw;
+    margin: 0 auto 5rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+form h1 {
+    color: #1267B8;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+form .filled {
+    width: 100%;
+    flex: 1;
+    gap: 2rem;
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 2.5rem;
+}
+
+.label svg {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    aspect-ratio: 1/1;
+    stroke-width: 2;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+input.number {
+    /* width: max-content; */
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.time-range {
+    width: calc(100% - 2rem);
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.time-range span {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.pdf-upload {
+    width: 100%;
+    flex: 1;
+}
+
+.pdf-dropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    text-align: center;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.pdf-dropzone:hover {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.pdf-placeholder svg {
+    margin-bottom: 0.75rem;
+    color: #555;
+}
+
+.pdf-placeholder p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pdf-placeholder span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.pdf-file {
+    display: none;
+    font-size: 1rem;
+    color: #000;
+}
+
+.pdf-dropzone.dragover {
+    border-color: #000;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.in-half {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+input[type="checkbox"] {
+    aspect-ratio: 1/1;
+    width: auto;
+    margin-right: auto;
+}
+
+.location {
+    flex: 1;
+    width: 100%;
+}
+
+.location input {
+    width: calc(100% - 2rem)
+}
+
+
+select {
+    width: calc(100% - 2rem);
+    height: 2.5rem;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    border-radius: 1000px;
+    line-height: 1.1;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+
+textarea {
+    width: calc(100% - 2rem);
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    margin-left: 2rem;
+    border-radius: 1.25rem;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.2);
+    box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+
+    resize: none;
+}
+
+form .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+.buttons .button {
+    width: 15rem;
+}
+
+.button {
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.button svg {
+    height: 1rem;
+    stroke-width: 2.5;
+}
+
+.button.white {
+    border: 2px solid white;
+    color: black;
+    box-shadow: inset 0 0 1rem white;
+}
+
+.button.white:hover {
+    background-color: white;
+    box-shadow: inset 0 0 1rem white,
+                0 0 0.5rem white;
+}
+
+.button.blue {
+    border: 2px solid #1267B8;
+    background-color: #1267B8;
+    color: white;
+}
+
+.button.blue:hover {
+    box-shadow: 0 0 1rem #1267B8;
+    background-color: white;
+    color: #1267B8;
+}
+

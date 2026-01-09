@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+form {
+    width: 50%;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/image/logo-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+    filter: saturate(0);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+.student {
+    background: #ede8d0;
+}
+
+.lecturer {
+    background-color: #efeee8;
+}
+
+form .upper-auth,
+form .lower-auth {
+    z-index: 1;
+}
+
+form .input-half {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin: 0.5rem 0;
+}
+
+form .input-group.no-margin {
+    margin: 0;
+}
+
+form .input-half.no-margin {
+    margin: 0;
+}
+
+form .big-input {
+    flex: 2;
+}
+
+form .file-input {
+    position: relative;
+    width: 100%;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid transparent;
+    background: white;
+    cursor: pointer;
+}
+
+form .file-input input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+form .file-placeholder {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+form .image-preview {
+    display: none;
+    height: 4rem;
+}
+
+form .image-preview img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 1.25rem;
+    border: 2px solid transparent;
+    background: white;
+
+    resize: vertical;
+    transition: 0.2s ease;
+}
+
+form a {
+    color: #00a3b9;
+}
+
+form .upper-auth a {
+    text-align: right;
+    width: 100%;
+    font-size: smaller;
+}
+
+form button {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    outline: 2px solid black;
+    transition: 
+        background-position 0.6s ease,
+        color 0.3s ease,
+        outline 0.3s ease;
+    background: linear-gradient(
+        135deg,
+        black,
+        black,
+        black,
+        whitesmoke,
+        whitesmoke,
+        whitesmoke
+    );
+    background-size: 250% 250%;
+    background-position: bottom right;
+}
+
+form button:hover {
+    color: white;
+    background-position: top left;
+    outline: 2px solid white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease-in-out;
+    overflow: hidden;
+    background: #111228;
+    padding: 5vh 5vw;
+    z-index: 2;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 200%;
+    height: 100%;
+    background-image: 
+        url("/image/student.png"),
+        url("/image/lecturer.png");
+    background-size: 30% auto;
+    background-position:
+        left -25% bottom -25%,
+        right -25% top -50%;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease-in-out;
+}
+
+.overlay button {
+    position: relative;
+    z-index: 2;
+    padding: 0.75rem 1.25rem;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    outline: 2px solid transparent;
+    transition: 
+        background-position 0.6s ease,
+        color 0.3s ease,
+        outline 0.3s ease;
+    background: linear-gradient(
+        180deg,
+        #32E1B5,
+        #455ED5,
+        whitesmoke,
+        whitesmoke
+    );
+    background-size: 100% 300%;
+    background-position: bottom;
+}
+
+.overlay button:hover {
+    color: white;
+    background-position: top;
+    outline: 2px solid white;
+}
+
+.overlay h1 {
+    z-index: 2;
+    text-align: center;
+}
+
+.change-class {
+    display: inline-block;
+    position: relative;
+    width: 7.5ch;
+    height: 1em;
+    overflow: hidden;
+    vertical-align: bottom;
+    height: 100%;
+}
+
+.change-track {
+    display: flex;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 0.8s ease-in-out;
+}
+
+.change-item {
+    flex: 0 0 100%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+.container.active .overlay {
+    transform: translateX(100%);
+}
+
+.container.active .overlay::before {
+    transform: translateX(-50%);
+}
+
+.container.active .change-track {
+    transform: translateX(-100%);
+}
+

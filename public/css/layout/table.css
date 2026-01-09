@@ -1,0 +1,127 @@
+.table-container {
+    flex: 1;
+    width: 100%;
+    padding-bottom: 1rem;
+    min-height: 0;
+}
+
+.table-scroll {
+    padding-right: 0.5rem;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.table-scroll::-webkit-scrollbar {
+    appearance: none;
+    width: 0.5rem;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+table {
+    --outer-radius: 1rem;
+    --outer-border: 1px;
+    --inner-border: 3px;
+    --inner-radius: calc(var(--outer-radius) - var(--outer-border) - var(--inner-border));
+    --dark-gray: #D7D7D7;
+    --light-gray: #E5E5E5;
+    --white: #F9F9F9;
+    width: 100%;
+    background-color: var(--dark-gray);
+    border-radius: var(--outer-radius);
+    border: var(--outer-border) solid var(--dark-gray);
+    border-collapse: separate;
+    border-spacing: var(--inner-border);
+    text-align: left;
+    font-size: 0.875rem;
+}
+
+thead {
+    height: 2rem;
+    background-color: var(--light-gray);
+}
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: var(--inner-radius);
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: var(--inner-radius);
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--inner-radius);
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--inner-radius);
+}
+
+th {
+    padding: 0.75rem 0.5rem;
+    font-weight: 500;
+}
+
+tbody:nth-last-child(0) {
+    border-radius: 0 0 1rem 1rem;
+}
+
+td {
+    background-color: var(--white);
+    padding: 0.75rem 0.5rem;
+    font-weight: 500;
+}
+
+td span {
+    padding: 0.25rem 0.5rem;
+    border-radius: 10rem;
+}
+
+td span.blue {
+    color: white;
+    background-color: #1267B8;
+}
+
+td span.gray {
+    color: white;
+    background-color: gray;
+}
+
+td span.green {
+    color: white;
+    background-color: green;
+}
+
+td span.red {
+    color: white;
+    background-color: red;
+}
+
+td a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* padding: 0.5rem; */
+    text-decoration: none;
+    color: black;
+    aspect-ratio: 1/1;
+    text-align: center;
+    width: 100%;
+}
+
+td a.link {
+    all: unset;
+    text-decoration: underline;
+    color: #1267B8;
+    cursor: pointer;
+}
+
+td a svg {
+    stroke-width: 2;
+    height: 1.25rem;
+    aspect-ratio: 1/1;
+}

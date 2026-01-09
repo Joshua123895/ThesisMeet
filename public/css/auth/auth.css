@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+form .upper-auth,
+form .lower-auth {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form .input-group {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+form label {
+    text-align: left;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    border-radius: 1000px;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid transparent;
+    height: 2.5rem;
+}
+
+form select {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    border-radius: 1000px;
+    line-height: 1.1;
+    border: 2px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+<?php
+return [
+    "p1" => "ThesisMeet adalah aplikasi teknologi pendidikan yang dirancang untuk membantu mahasiswa dan dosen mengelola konsultasi tesis dengan lebih mudah dan efisien. Aplikasi ini tersedia di platform seluler dan web, memungkinkan pengguna untuk mengakses sistem secara fleksibel kapan saja dan di mana saja.",
+    "p2" => "Banyak mahasiswa menghadapi kesulitan saat menjadwalkan konsultasi tesis karena mereka seringkali harus mengantre atau bergantung pada komunikasi yang lambat dengan dosen mereka. Akibatnya, proses konsultasi dapat menjadi tidak terorganisir dan memakan waktu. ThesisMeet diciptakan untuk mengatasi masalah ini dengan menyediakan sistem konsultasi online terstruktur yang menyederhanakan penjadwalan dan komunikasi.",
+    "p3" => "Melalui platform ini, mahasiswa dapat memesan jadwal konsultasi yang tersedia, mengunggah dokumen tesis seperti proposal atau revisi, dan melacak kemajuan konsultasi mereka di satu tempat.</p> Pada saat yang sama, dosen dapat mengatur jadwal konsultasi, meninjau dokumen mahasiswa, dan memberikan catatan revisi langsung melalui sistem, sehingga prosesnya menjadi lebih efisien.",
+    "p4" => "Secara keseluruhan, ThesisMeet bertujuan untuk membuat proses konsultasi tesis lebih terorganisir, lebih cepat, dan lebih mudah dipantau baik bagi mahasiswa maupun dosen. Dengan menggunakan aplikasi ini, komunikasi menjadi lebih jelas, pengelolaan dokumen menjadi lebih sederhana, dan kemajuan konsultasi dapat dilacak secara efektif dari awal hingga akhir.",
+];
