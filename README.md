@@ -50,6 +50,17 @@ Generate the application key:
 ```bash
 php artisan key:generate
 ```
+
+Setting up your .env key
+
+```env
+APP_NAME=ThesisMeet
+MAIL_MAILER=resend
+MAIL_FROM_ADDRESS="noreply@thesismeet.com
+RESEND_API_KEY= {your resend api key}
+RESEND_VERIFY=false
+```
+
 ## 🔗 Storage Link
 
 Create a symbolic link for storage:
